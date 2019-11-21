@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthGuard } from './auth-guard.service';
 import { AuthService } from './auth.service';
+import { CanDeactivateGuard } from './servers/edit-server/canDeactivate.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { AuthService } from './auth.service';
   providers: [
     ServersService,
     AuthGuard,
+    CanDeactivateGuard,
     AuthService
   ],
   bootstrap: [AppComponent]
