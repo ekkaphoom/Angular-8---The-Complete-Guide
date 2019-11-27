@@ -16,8 +16,8 @@ export class RecipeService {
     console.log(this.recipes);
     return this.recipes;
   }
-  getRecipe(name: string) {
-    console.log(name, this.recipes.slice().find(r => r.name === name));
-    return this.recipes.slice().find(r => r.name === name);
+  getRecipe(id: number) {
+    console.log(id, this.recipes.slice()[id]);
+    return this.recipes.slice()[id];
   }
 }
